@@ -1,0 +1,50 @@
+
+<html>
+	<head>
+		<title>Form Validation</title>
+		<link rel="stylesheet"href="style2.css">
+		<script src="script2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="container">
+			<form>
+				<i class="fa-solid fa-id-card"></i>
+				<div class="input-group">
+				<label>Full Name:</label>
+				<input type="text"placeholder="Enter your name"id="contact-name"onkeyup="validateName()"required>
+				<span id="name-error"></span>
+			</div>
+
+			<div class="input-group">
+				<label>Phone No:</label>
+				<input type="number"placeholder="123 456 7890"id='contact-phone'onkeyup='validatePhone()'required>
+				<span id="phone-error"></span>
+			</div>
+
+			<div class="input-group">
+				<label>Email Id:</label>
+				<input type="email"placeholder="Enter Email"id='contact-email'onkeyup='validateEmail()'required>
+				<span id="email-error"></span>
+			</div>
+			<div class="input-group">
+				<label>Password:</label>
+				<input type="Password"placeholder="Enter Password"id='contact-Password'onkeyup="validatePassword()"required>
+				<span id="password-error"></span>
+			</div>
+			<div class="input-group">
+				<label>Re-Password:</label>
+				<input type="Password"placeholder="Re-Enter Password"id='contact-Password2'onkeyup="validatePassword2()"required>
+				<span id="password2-error"></span>
+			</div>
+			<div class="input-group">
+				<input type="checkbox">
+				<label style="margin-left:-30%">Remember me</label>
+			</div>
+			
+			<button onclick="return validateForm()">Submit</button>
+			<span id="submit-error"></span>
+			</form>
+		</div>
+	</body>
+</html>

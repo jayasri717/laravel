@@ -1,0 +1,93 @@
+<html>
+<head>
+<title> Login And Registration form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+</html>
+<body>
+<div class="container">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+<h2> LOGIN </h2>
+<form>
+<input type="email" class="input-box" placeholder="Enter your Email Id" required>
+
+<input type="password" class="input-box" placeholder="password" required></form>
+<button type="submit" class="submit-btn"> Submit</button>
+<input type="checkbox"><span> Remember Me </span>
+</form>
+<button type="button" class="btn" onclick="openRegister()"> I'm New Here</button></br>
+<a href="">Forget Password </a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="card">
+<div class="inner-box">
+<div class="card-back" id="note">
+<h2> REGISTER </h2>
+<form>
+<input type="text" class="input-box" placeholder="your name" required>
+<input type="email" class="input-box" placeholder="your Email Id" required>
+
+<input type="password" class="input-box" placeholder="password" required></form>
+<button type="submit" class="submit-btn"> Submit</button>
+<input type="checkbox"><span> Remember Me </span>
+</form>
+<button type="button" class="btn" onclick="openLogin()"> I've an Account </button></br>
+<a href="">Forget Password </a>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+<script>
+function openRegister()
+{
+password=prompt("please enter your password","")
+if (password==12345)
+{
+document.getElementById("card").innerHTML="Password successfully";
+}
+else
+{
+document.getElementById("card").innerHTML="Password incorrect";
+}
+}
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
